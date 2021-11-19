@@ -14,7 +14,7 @@ document.getElementById("btn_clicar").onclick = () => {
         });
 
         let ValorFuturo = (ValorAplicadoMensalmente * ((((1 + TaxaDeJuros) ** NumeroParcelas) - 1) / TaxaDeJuros)).toFixed(2)
-        resultado.innerHTML = `Jose da Silva, se voce aplicar ${formatter.format(ValorAplicadoMensalmente)}, à taxa de juros de ${TaxaDeJuros}% ao mês, durante ${NumeroParcelas}, acumulará uma poupança de ${formatter.format(ValorFuturo)}`
+        resultado.innerHTML = `Jose da Silva, se voce aplicar ${formatter.format(ValorAplicadoMensalmente)}, à taxa de juros de ${TaxaDeJuros}% ao mês, durante ${NumeroParcelas} meses, acumulará uma poupança de ${formatter.format(ValorFuturo)}`
     }
     else 
     {
